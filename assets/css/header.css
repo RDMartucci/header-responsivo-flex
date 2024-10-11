@@ -7,7 +7,6 @@ header{
     height: 4vh;
 }
 .header-contenedor {
-    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #f8f8f8;
@@ -15,19 +14,17 @@ header{
 
 .div-header-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 1vw;
+    padding: 0.5vh 1vw;
 }
 
 /* *** logo *** */
-
-#div-logo {
-    font-size: 20px;
-}
 #logo-img {
-    width: 150px;
+    background-image: url(../img/broncomuebles-logo.png);
+    width: 120px;
     height: 70px;
+    
 }
 
 /* *** menu top *** */
@@ -43,6 +40,25 @@ header{
 }
 
 /* *** Formulario de búsqueda *** */
+/* ** Icono  de búsqueda ** */
+#icono-busqueda {
+    cursor: pointer;
+}
+/* ** formulario ** */
+.form-buscar {
+    width: 95%;
+    padding: 1vh 2vw;
+    background-color: rgb(200, 200, 200);
+    border-radius: 5vw;
+    border-width: 3px;
+    border-color:rgb(125, 125, 125);
+}
+input[type=text]{
+    border-radius: 3vw;
+    background-color: rgba(190, 57, 57, 0.5);
+    /* border-width: 3px;
+    border-color:rgb(125, 125, 125); */
+}
 
 
 /* *** clases activadoras / mostradoras *** */
@@ -59,44 +75,36 @@ header{
     /* top: 11vh;
     left: 30vw; */
     top: 20vh;
-    left: 3vw;
+    margin: 0 auto;
 }
 
 .form-buscar-activo {
-    display: inline;
+    display: flex;
     position: absolute;
-    top: 5vh;
-    left: 20vw;
+    top: 7vh;
+    left: 0px;
+    right: 0px;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
 }
 /* *** */
 
 
-
-
-
-
-
-/* Media Queries */
-
-/* Hasta 768px (tablet) */
-@media (min-width: 425px) and (max-width: 768px) {
-    #hamburguesa {
+/* ***** Media Queries ***** */
+/* Hasta 425px */
+@media screen  and (min-width: 575px) {
+    #icono-busqueda{
+        display: none;
+    }
+    #form-busqueda{
         display: block;
+        width: 95%;
     }
-
     /* Logo, formulario de búsqueda y login visibles */
-    .div-header-top {
-        justify-content: space-between;
-    }
 
-    #menu-mobile {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .ul-login, .div-carrito, .form-buscar {
-        display: inline-block;
-    }
 }
 
 /* Hasta 1024px (pantallas medianas) */
@@ -126,3 +134,5 @@ header{
         align-items: center;
     }
 }
+
+
