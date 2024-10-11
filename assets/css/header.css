@@ -1,0 +1,122 @@
+/* Estilos generales */
+/* Mobile First - max-width=320px */
+
+/* *** header *** */
+header{
+    width: 100%;
+    height: 4vh;
+}
+.header-contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+}
+
+.div-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+}
+
+/* *** logo *** */
+
+#div-logo {
+    font-size: 20px;
+}
+
+/* *** menu top *** */
+#hamburguesa {
+    display: block;
+    cursor: pointer;
+}
+
+.ul-menu-top,
+.nav-menu-principal,
+.form-buscar{
+    display: none;
+}
+
+/* *** Formulario de búsqueda *** */
+
+
+/* *** clases activadoras / mostradoras *** */
+.menu-top-activo {
+    display: block;
+    position: absolute;
+    top: 11vh;
+    left: 2vw;
+}
+
+.menu-principal-activo {
+    display: block;
+    position: absolute;
+    top: 11vh;
+    left: 30vw;
+}
+
+.form-buscar-activo {
+    display: inline;
+    position: absolute;
+    top: 5vh;
+    left: 20vw;
+}
+/* *** */
+
+
+
+
+
+
+
+/* Media Queries */
+
+/* Hasta 768px (tablet) */
+@media (min-width: 321px) and (max-width: 768px) {
+    #hamburguesa {
+        display: block;
+    }
+
+    /* Logo, formulario de búsqueda y login visibles */
+    .div-header-top {
+        justify-content: space-between;
+    }
+
+    #menu-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ul-login, .div-carrito, .form-buscar {
+        display: inline-block;
+    }
+}
+
+/* Hasta 1024px (pantallas medianas) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .div-hamburguesa,
+    .div-hamburguesa2 {
+        display: none;
+    }
+
+    .div-menu-top-contenedor {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ul-menu-top, .ul-login, .div-carrito {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* Desde 1025px en adelante (desktop) */
+@media (min-width: 1025px) {
+    .div-menu-top-contenedor, .div-header-base {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
