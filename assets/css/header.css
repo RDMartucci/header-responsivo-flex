@@ -46,7 +46,8 @@ header{
 }
 /* ** formulario ** */
 .form-buscar {
-    width: 95%;
+    width: 95vw;
+    margin: 0 auto;
     padding: 1vh 2vw;
     background-color: rgb(200, 200, 200);
     border-radius: 5vw;
@@ -56,8 +57,7 @@ header{
 input[type=text]{
     border-radius: 3vw;
     background-color: rgba(190, 57, 57, 0.5);
-    /* border-width: 3px;
-    border-color:rgb(125, 125, 125); */
+    width: 90%;
 }
 
 
@@ -82,8 +82,6 @@ input[type=text]{
     display: flex;
     position: absolute;
     top: 7vh;
-    left: 0px;
-    right: 0px;
     flex-direction: row;
     align-content: center;
     justify-content: center;
@@ -94,7 +92,7 @@ input[type=text]{
 
 
 /* ***** Media Queries ***** */
-/* Hasta 425px */
+/* Hasta 575px */
 @media screen  and (min-width: 575px) {
     #icono-busqueda{
         display: none;
@@ -109,10 +107,6 @@ input[type=text]{
 
 /* Hasta 1024px (pantallas medianas) */
 @media (min-width: 769px) and (max-width: 1024px) {
-    .div-hamburguesa,
-    .div-hamburguesa2 {
-        display: none;
-    }
 
     .div-menu-top-contenedor {
         display: flex;

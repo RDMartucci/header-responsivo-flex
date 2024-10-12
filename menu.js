@@ -8,5 +8,4 @@ document.getElementById('hamburguesa').addEventListener('click', function () {
 
 document.getElementById('icono-busqueda').addEventListener('click',function(){
     document.querySelector('.form-buscar').classList.toggle('form-buscar-activo');
-    document.getElementById('icono-busqueda')
 });
