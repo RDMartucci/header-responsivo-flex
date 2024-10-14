@@ -3,13 +3,13 @@
 
 /* *** header *** */
 header{
-    width: 100%;
-    height: 4vh;
+    width: var(--headerAncho);
+    height: var(--headerAlto);
 }
 .header-contenedor {
     display: flex;
     flex-direction: column;
-    background-color: #f8f8f8;
+    background-color: var(--color-2);
 }
 
 .div-header-top {
@@ -27,14 +27,14 @@ header{
 
 /* *** Icono menú hamburguesa *** */
 div.div-hamburguesa{
-    font-size: xx-large;
+    font-size: var(--fontSize1);
 }
 
 /* *** LOGO *** */
 #logo-img {
     background-image: url(../img/broncomuebles-logo.png);
-    width: 18vw;
-    height: 7vh;
+    width: var(--logoAncho);
+    height: var(--logoAlto);
 }
 
 /* ***** MENU TOP ***** */
@@ -48,7 +48,7 @@ div.div-hamburguesa{
     background-color: rgba(21, 57, 57, 0.8);
     margin: auto;
     text-align: center;
-    line-height: 4vh;
+    line-height: var(--Interlineado1);
 }
 
 
@@ -56,7 +56,7 @@ div.div-hamburguesa{
 /* ** Icono  de búsqueda ** */
 #icono-busqueda {
     cursor: pointer;
-    font-size: xx-large;
+    font-size: 24px;
 }
 /* ** formulario ** */
 .form-buscar {
@@ -125,7 +125,7 @@ a.link-menu:hover{
 .form-buscar-activo {
     display: flex;
     position: absolute;
-    top: 7vh;
+    top: 8vh;
     flex-direction: row;
     align-content: center;
     justify-content: center;

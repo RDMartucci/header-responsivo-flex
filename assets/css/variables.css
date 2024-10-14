@@ -1,0 +1,33 @@
+:root{
+    /* COLORES */
+    --color-1a: #1f1d1de7;
+    --color-1b: #1f1d1d;
+
+    --color-2: #2d0441cf;
+    --color-2: #2d0441;
+
+    --color-3: #aaaaaa;
+    --color-3: #aaaaaace;
+
+    --color-4: #a71387;
+    --color-4: #a71387aa;
+
+    --fontSize1: 24px;
+    --fontSize2: 18px;
+    --fontSize3: 16px;
+
+    --Interlineado1: 4vh;
+    --Interlineado2: 6vh;
+
+
+    /* *** HEADER *** */
+    --headerAncho: 100%;
+    --headerAlto: 13vh;
+
+    
+    /* *** LOGO *** */
+    --logoAncho: 40vw;
+    --logoAlto: 11vh;
+
+
+}
