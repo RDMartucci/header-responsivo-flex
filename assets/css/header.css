@@ -19,30 +19,44 @@ header{
     padding: 0.5vh 1vw;
 }
 
-/* *** logo *** */
-#logo-img {
-    background-image: url(../img/broncomuebles-logo.png);
-    width: 120px;
-    height: 70px;
-    
-}
-
-/* *** menu top *** */
-#hamburguesa {
-    display: block;
-    cursor: pointer;
-}
-
 .ul-menu-top,
 .nav-menu-principal,
 .form-buscar{
     display: none;
 }
 
+/* *** Icono menú hamburguesa *** */
+div.div-hamburguesa{
+    font-size: xx-large;
+}
+
+/* *** LOGO *** */
+#logo-img {
+    background-image: url(../img/broncomuebles-logo.png);
+    width: 18vw;
+    height: 7vh;
+}
+
+/* ***** MENU TOP ***** */
+#hamburguesa {
+    display: block;
+    cursor: pointer;
+}
+
+.ul-menu-top {
+    width: 100%;
+    background-color: rgba(21, 57, 57, 0.8);
+    margin: auto;
+    text-align: center;
+    line-height: 4vh;
+}
+
+
 /* *** Formulario de búsqueda *** */
 /* ** Icono  de búsqueda ** */
 #icono-busqueda {
     cursor: pointer;
+    font-size: xx-large;
 }
 /* ** formulario ** */
 .form-buscar {
@@ -61,21 +75,51 @@ input[type=text]{
 }
 
 
-/* *** clases activadoras / mostradoras *** */
-.menu-top-activo {
+/* ***** HEADER BASE ***** */
+/***************************/
+
+/* ***** MENU PRINCIPAL ***** */
+.ul-menu-principal {
+    /* display: block; */
+    width: 100%;
+    background-color: rgba(21, 57, 57, 0.8);
+    margin: auto;
+    /* text-align: center; */
+    line-height: 4vh;
+}
+.li-menu-item{
+    width: 100%;
+}
+a.link-menu{
     display: block;
-    position: absolute;
-    top: 11vh;
-    left: 2vw;
+    width: 100%;
+    color: cadetblue;
+    transition: all 0.3s ease-in-out;
+    
+}
+a.link-menu:hover{
+    background-color: black;
+    color: #f8f8f8;
+    text-shadow: 1px 1px 2px rgb(207, 243, 4);
+    font-size: large;
+    transition: all 0.3s ease-in;
 }
 
+/* *** clases activadoras / mostradoras *** */
+.menu-top-activo,
 .menu-principal-activo {
     display: block;
     position: absolute;
-    /* top: 11vh;
-    left: 30vw; */
-    top: 20vh;
-    margin: 0 auto;
+    width: 100vw;
+    left: 0;
+    text-align: left;
+}
+.menu-top-activo{
+    background-color: rgba(21, 57, 57, 0.8);
+    top: 9vh;
+}
+.menu-principal-activo {
+    top: 21vh;
 }
 
 .form-buscar-activo {
@@ -91,7 +135,9 @@ input[type=text]{
 /* *** */
 
 
-/* ***** Media Queries ***** */
+/* ********************************************* */
+/* *************** Media Queries *************** */
+/* ********************************************* */
 /* Hasta 575px */
 @media screen  and (min-width: 575px) {
     #icono-busqueda{
@@ -99,8 +145,10 @@ input[type=text]{
     }
     #form-busqueda{
         display: block;
-        width: 95%;
+        width: 48%;
+        margin: 0;
     }
+
     /* Logo, formulario de búsqueda y login visibles */
 
 }
