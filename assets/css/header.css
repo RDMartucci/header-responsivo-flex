@@ -21,7 +21,8 @@ header{
 
 .ul-menu-top,
 .nav-menu-principal,
-.form-buscar{
+.form-buscar,
+.ul-menu-login {
     display: none;
 }
 
@@ -74,6 +75,20 @@ input[type=text]{
     width: 90%;
 }
 
+/* *** Menu LOGIN *** */
+.link-menu-login{
+    color: white;
+    padding: 0.5vh 1vw;
+    transition: all 0.3s ease-in-out;
+}
+.link-menu-login:hover{
+    /* font-size: var(--fontSize3); */
+    background-color: black;
+    color: var(--color-3);
+    text-shadow: 1px 1px 2px var(--color-4);
+    transition: all 0.3s ease-in;
+}
+
 
 /* ***** HEADER BASE ***** */
 /***************************/
@@ -84,7 +99,6 @@ input[type=text]{
     width: 100%;
     background-color: rgba(21, 57, 57, 0.8);
     margin: auto;
-    /* text-align: center; */
     line-height: 4vh;
 }
 .li-menu-item{
@@ -99,9 +113,9 @@ a.link-menu{
 }
 a.link-menu:hover{
     background-color: black;
-    color: #f8f8f8;
-    text-shadow: 1px 1px 2px rgb(207, 243, 4);
-    font-size: large;
+    color: var(--color-3);
+    text-shadow: 1px 1px 2px var(--color-4);
+    font-size: var(--fontSize2);
     transition: all 0.3s ease-in;
 }
 
@@ -116,10 +130,12 @@ a.link-menu:hover{
 }
 .menu-top-activo{
     background-color: rgba(21, 57, 57, 0.8);
-    top: 9vh;
+    top: 13vh;
+    transition: all 0.3s ease-in;
 }
 .menu-principal-activo {
-    top: 21vh;
+    top: 25vh;
+    transition: all 0.3s ease-in;
 }
 
 .form-buscar-activo {
