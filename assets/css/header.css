@@ -17,6 +17,8 @@ header{
     justify-content: space-around;
     align-items: center;
     padding: 0.5vh 1vw;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .ul-menu-top,
@@ -29,13 +31,16 @@ header{
 /* *** Icono menú hamburguesa *** */
 div.div-hamburguesa{
     font-size: var(--fontSize1);
+    color: var(--color-3);
 }
 
 /* *** LOGO *** */
 #logo-img {
     background-image: url(../img/broncomuebles-logo.png);
     width: var(--logoAncho);
+    max-width: var(--logoAnchoMax);
     height: var(--logoAlto);
+    max-height: var(--logoAltoMax);
 }
 
 /* ***** MENU TOP ***** */
@@ -55,9 +60,11 @@ div.div-hamburguesa{
 
 /* *** Formulario de búsqueda *** */
 /* ** Icono  de búsqueda ** */
-#icono-busqueda {
+#icono-busqueda,
+#icono-login {
     cursor: pointer;
-    font-size: 24px;
+    font-size: var(--fontSize1);
+    color: var(--color-3);
 }
 /* ** formulario ** */
 .form-buscar {
@@ -76,6 +83,25 @@ input[type=text]{
 }
 
 /* *** Menu LOGIN *** */
+#icono-login {
+
+}
+
+.div-login{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5vh 1vw;
+}
+
+.ul-menu-login{
+    width: 100%;
+    /* background-color: rgba(21, 57, 57, 0.8); */
+    margin: auto;
+    text-align: center;
+    line-height: var(--Interlineado1);
+}
+
 .link-menu-login{
     color: white;
     padding: 0.5vh 1vw;
@@ -89,6 +115,14 @@ input[type=text]{
     transition: all 0.3s ease-in;
 }
 
+/* *** CARRITO *** */
+.div-carrito{
+    width: 100%;
+    /* background-color: rgba(21, 57, 57, 0.8); */
+    margin: auto;
+    line-height: 4vh;
+    border-radius: 3vw;
+}
 
 /* ***** HEADER BASE ***** */
 /***************************/
@@ -118,6 +152,7 @@ a.link-menu:hover{
     font-size: var(--fontSize2);
     transition: all 0.3s ease-in;
 }
+/*****/
 
 /* *** clases activadoras / mostradoras *** */
 .menu-top-activo,
@@ -130,11 +165,12 @@ a.link-menu:hover{
 }
 .menu-top-activo{
     background-color: rgba(21, 57, 57, 0.8);
-    top: 13vh;
+    top: var(--headerAlto);
     transition: all 0.3s ease-in;
+    height: var(--menuTopAlto);
 }
 .menu-principal-activo {
-    top: 25vh;
+    top: calc(var(--headerAlto) + 12vh);
     transition: all 0.3s ease-in;
 }
 
@@ -172,25 +208,27 @@ a.link-menu:hover{
 /* Hasta 1024px (pantallas medianas) */
 @media (min-width: 769px) and (max-width: 1024px) {
 
-    .div-menu-top-contenedor {
+    /* .ul-menu-top,  */
+    .ul-menu-login, 
+    .div-carrito {
+        /* display: flex;
+        align-items: center; */
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
         align-items: center;
-    }
-
-    .ul-menu-top, .ul-login, .div-carrito {
-        display: flex;
-        align-items: center;
+        flex-wrap: wrap;
     }
 }
 
 /* Desde 1025px en adelante (desktop) */
 @media (min-width: 1025px) {
-    .div-menu-top-contenedor, .div-header-base {
+    /* .div-menu-top-contenedor, .div-header-base {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
+    } */
 }
 
 

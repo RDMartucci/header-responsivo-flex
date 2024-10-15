@@ -13,7 +13,7 @@
     --color-4: #a71387aa;
 
     --fontSize1: 24px;
-    --fontSize2: 18px;
+    --fontSize2: 20px;
     --fontSize3: 16px;
 
     --Interlineado1: 4vh;
@@ -22,12 +22,23 @@
 
     /* *** HEADER *** */
     --headerAncho: 100%;
-    --headerAlto: 13vh;
+    --headerAlto: 10vh;
 
     
     /* *** LOGO *** */
     --logoAncho: 40vw;
-    --logoAlto: 11vh;
+    --logoAlto: 9vh;
+    --logoAnchoMax: 160px;
+    --logoAltoMax: 70px;
 
+    /* *** MENU TOP *** */
+    --menuTopAncho: 100%;
+    --menuTopAlto: 12vh;
+    /* --menuTopColor: #ffffff;
+    --menuTopHoverColor: #cccccc;
+    --menuTopFondoColor: #1f1d1de7;
+    --menuTopFondoHoverColor: #1f1d1d;
+    --menuTopFondoActivoColor: #a71387;
+    --menuTopFondoActivoHoverColor: #a71387aa; */
 
 }
