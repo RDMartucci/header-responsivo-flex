@@ -2,36 +2,29 @@
     /* COLORES */
     --color-1a: #1f1d1de7;
     --color-1b: #1f1d1d;
-
     --color-2: #2d0441cf;
-    --color-2: #2d0441;
-
+    --color-2b: #2d0441;
     --color-3: #aaaaaa;
-    --color-3: #aaaaaace;
-
+    --color-3b: #aaaaaace;
     --color-4: #a71387;
-    --color-4: #a71387aa;
-
-    --fontSize1: 24px;
-    --fontSize2: 20px;
-    --fontSize3: 16px;
-
+    --color-4b: #a71387aa;
+    /* FUENTES */
+    --fontsize1: 24px;
+    --fontsize2: 20px;
+    --fontsize3: 16px;
+    /* INTERLINEADO */
     --Interlineado1: 4vh;
     --Interlineado2: 6vh;
-
-
     /* *** HEADER *** */
     --headerAncho: 100%;
     --headerAlto: 10vh;
-
-    
-    /* *** LOGO *** */
+    /* LOGO */
     --logoAncho: 40vw;
     --logoAlto: 9vh;
     --logoAnchoMax: 160px;
     --logoAltoMax: 70px;
 
-    /* *** MENU TOP *** */
+    /* MENU TOP */
     --menuTopAncho: 100%;
     --menuTopAlto: 12vh;
     /* --menuTopColor: #ffffff;
@@ -41,4 +34,5 @@
     --menuTopFondoActivoColor: #a71387;
     --menuTopFondoActivoHoverColor: #a71387aa; */
 
+    
 }
